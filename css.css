@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f5f5f5;
+  color: #313131;
+}
+
+header {
+  background: #02aa72;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 37px;
+  font-weight: 600;
+}
+.logo span {
+  color: #00ff37;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 3px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #02e989;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+footer {
+  background: #02aa72;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.projekt {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.projekt:hover {
+  transform: scale(1.03);
+}
+.projekt img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.kontakt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.kontakt-form input, .kontakt-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.kontakt-form button {
+  background: #008039;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.kontakt-form button:hover {
+  background: #016929;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+    display: inline-block;
+    margin: 10px;
+  }
+}
